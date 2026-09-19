@@ -41,6 +41,16 @@
 - 通过交互式动画呈现向量空间、线性变换、特征值、二次型与 PCA 等概念。
 - 仓库包含自动测试、构建流程与 Vercel 配置；项目文档与贡献边界仍在整理。
 
+## 持续学习
+
+### [机器学习学习记录](https://github.com/lpwei-quant/machine-learning-journey)
+
+`Python` · `scikit-learn` · `数据审计` · `学习进度`
+
+- 整理 Digits 分类与误分类分析、House Prices 数据入门、CreditRisk Lab 数据审计，以及 SVM / 逻辑回归复述记录。
+- 当前主线为信用数据审计；房价回归和信用评分模型尚未训练。提供实际运行结果、复现代码与明确的学习停点。
+- [当前进度与下次入口](https://github.com/lpwei-quant/machine-learning-journey/blob/main/PROGRESS.md)
+
 ## 当前能力
 
 - 数据处理：Python、pandas、openpyxl、Matplotlib
@@ -57,4 +67,5 @@
 ## 联系方式
 
 - 学校邮箱：2024111285@stu.sufe.edu.cn
+
 
