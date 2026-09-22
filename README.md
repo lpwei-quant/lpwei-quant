@@ -1,8 +1,18 @@
 # 魏来平 | Investment × Mathematics
 
-上海财经大学投资学 × 数学双学位本科生，关注数据分析、量化研究、FinTech 与可复现建模。
+上海财经大学投资学 × 数学双学位本科生（2028 届），关注数据分析、量化研究与可复现建模。
+
+**在找什么**：上海的数据分析 / 商业分析 / 策略分析实习 ｜ 可立即到岗 · 每周 5 天 · 可连续实习 6 个月
 
 ## 精选项目
+
+### [Olist 电商数据 SQL 分析：漏斗、留存与 RFM](https://github.com/lpwei-quant/olist-sql-analysis)
+
+`SQL` · `SQLite / MySQL` · `窗口函数` · `经营看板` · `分析报告`
+
+- 对 8 张表、99,441 笔订单建模，编写 12 个查询，覆盖多表 JOIN、CTE 与 ROW_NUMBER / LAG / NTILE / SUM OVER 窗口函数。
+- 关键结论：订单签收率 97.02%；配送 21 天以上订单差评率 38.18%，为 7 天内的 5.1 倍；复购率 3.12%；Top10 卖家仅贡献 12.8% 的 GMV。
+- 先做数据质量体检再分析（评论标题缺失 88%、2,965 笔订单无签收时间），配套经营看板与 3 页分析报告，全流程可用 `node run.mjs` 一键复现。
 
 ### [微网购电与储能调度：预测不确定性下的策略分析](https://github.com/lpwei-quant/modeling-analytics-portfolio/tree/main/projects/microgrid-2026)
 
@@ -53,19 +63,18 @@
 
 ## 当前能力
 
-- 数据处理：Python、pandas、openpyxl、Matplotlib
-- 分析方法：数据清洗、连接、聚合、统计分析与交叉校验
-- 建模实践：数学规划、Monte Carlo 模拟与风险度量
-- 工程工具：Git、GitHub、基础前端与 API 集成
+- 数据处理：Python、pandas、NumPy、Matplotlib、openpyxl
+- SQL：MySQL 8 / SQLite，多表 JOIN、子查询、CTE、窗口函数
+- 分析方法：数据清洗、口径定义、聚合、统计分析与结果交叉校验
+- 建模实践：数学规划、Monte Carlo 模拟、分类模型评估与风险度量
+- 工程工具：Git、GitHub、基础前端与 API 集成；AI Agent 工具辅助分析流程
 
 ## 正在做什么
 
-- 继续完善可复现的金融数据分析项目
+- 继续完善可复现的数据分析与金融数据项目
 - 学习计量经济学、数据挖掘与机器学习
-- 寻找数据分析、策略运营与 FinTech 相关实习机会
+- 寻找数据分析、商业分析、策略运营与 FinTech 相关实习机会
 
 ## 联系方式
 
 - 学校邮箱：2024111285@stu.sufe.edu.cn
-
-
