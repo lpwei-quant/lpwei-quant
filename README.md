@@ -6,13 +6,21 @@
 
 ## 精选项目
 
-### [Olist 电商数据 SQL 分析：漏斗、留存与 RFM](https://github.com/lpwei-quant/olist-sql-analysis)
+### [Olist 电商订单分析：SQL、固定次月回流与经营看板](https://github.com/lpwei-quant/olist-sql-analysis)
 
-`SQL` · `SQLite / MySQL` · `窗口函数` · `经营看板` · `分析报告`
+`SQL / SQLite` · `窗口函数` · `指标口径` · `数据质量`
 
-- 对 8 张表、99,441 笔订单建模，编写 12 个查询，覆盖多表 JOIN、CTE 与 ROW_NUMBER / LAG / NTILE / SUM OVER 窗口函数。
-- 关键结论：订单签收率 97.02%；配送 21 天以上订单差评率 38.18%，为 7 天内的 5.1 倍；复购率 3.12%；Top10 卖家仅贡献 12.8% 的 GMV。
-- 先做数据质量体检再分析（评论标题缺失 88%、2,965 笔订单无签收时间），配套经营看板与 3 页分析报告，全流程可用 `node run.mjs` 一键复现。
+- 基于 8 张表、99,441 笔订单的 AI 辅助学习项目，完成 12 个查询、HTML 看板、CSV 导出及分析报告。
+- 重点处理一单多评价去重、统一金额样本、固定次月观察窗口和 RFM 频次并列问题。去重后，配送超过 21 天订单差评率为 38.21%，7 天内为 7.45%；仅作相关性描述。
+- 独立 CSV 核验包含 6 项检查；[审计记录](https://github.com/lpwei-quant/olist-sql-analysis/blob/main/AUDIT.md)保留发现、修正和限制。SQLite 日期函数迁移到 MySQL 需改写；Tableau Public 尚未完成。
+
+### [信用评分卡：WOE / IV、逻辑回归与模型核验](https://github.com/lpwei-quant/credit-scorecard)
+
+`Python` · `pandas / NumPy` · `WOE / IV` · `AUC / KS`
+
+- 基于 UCI German Credit 1,000 条历史样本的 AI 辅助学习型复现，分箱、WOE、IV 筛选仅使用训练集，固定随机划分后评估留出集。
+- 测试集 AUC 0.7643、KS 0.4052；修正评分公式遗漏截距及同分概率 KS 处理，7 项单元测试通过。
+- [审计记录](https://github.com/lpwei-quant/credit-scorecard/blob/main/AUDIT.md)与报告明确小样本、单次划分和未做时间外验证等限制；阈值取训练集 KS 最大点，未声称成本最优或可直接投入审批。
 
 ### [微网购电与储能调度：预测不确定性下的策略分析](https://github.com/lpwei-quant/modeling-analytics-portfolio/tree/main/projects/microgrid-2026)
 
@@ -58,7 +66,7 @@
 `Python` · `scikit-learn` · `数据审计` · `学习进度`
 
 - 整理 Digits 分类与误分类分析、House Prices 数据入门、CreditRisk Lab 数据审计，以及 SVM / 逻辑回归复述记录。
-- 当前主线为信用数据审计；房价回归和信用评分模型尚未训练。提供实际运行结果、复现代码与明确的学习停点。
+- 该学习仓库记录信用数据审计与房价回归的学习停点；另一个独立作品 credit-scorecard 已完成评分卡演示。提供实际运行结果、复现代码与明确的学习停点。
 - [当前进度与下次入口](https://github.com/lpwei-quant/machine-learning-journey/blob/main/PROGRESS.md)
 
 ## 当前能力
